@@ -1,10 +1,22 @@
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { LoginPage } from '@/features/auth'
+import { SiteDetailPage, SitesPage } from '@/features/sites'
+import { ProtectedRoute } from '@/components/ProtectedRoute'
+
 function App() {
   return (
-    <>
-      <h1>Site Manager</h1>
-      <p>Scaffolding complete - features coming soon</p>
-    </>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<LoginPage />}></Route>
+        <Route element={<ProtectedRoute />}>
+          <Route path="/sites" element={<SitesPage />}></Route>
+          <Route path="/sites/:siteId" element={<SiteDetailPage />}></Route>
+        </Route>
+
+        <Route path="*" element={<Navigate to={'/login'} replace />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

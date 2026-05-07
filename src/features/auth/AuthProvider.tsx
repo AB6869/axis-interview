@@ -7,7 +7,7 @@ import { AuthContext } from './AuthContext'
 const STORAGE_KEY = 'auth_user'
 
 function readStoredUser(): AuthUser | null {
-  const stored = sessionStorage.get(STORAGE_KEY)
+  const stored = sessionStorage.getItem(STORAGE_KEY)
 
   if (!stored) return null
   try {
