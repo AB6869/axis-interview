@@ -50,18 +50,17 @@
         { "id": "SDCard", "state": "ok" }
       ]
     },
-    { "id": 4,
-     "site_id": 2,
-     "title": "Demo camera 4",
-     "description": "Overview of warehouse",
-     "model": "Q8641-E",
-     "version": "7.30",
-     "enabled": true,
-     "connected": true,
-     "timezone": "CET-1",
-      "storages": [
-        { "id": "NetworkShare", "state": "ok" }
-      ]
+    {
+      "id": 4,
+      "site_id": 2,
+      "title": "Demo camera 4",
+      "description": "Overview of warehouse",
+      "model": "Q8641-E",
+      "version": "7.30",
+      "enabled": true,
+      "connected": true,
+      "timezone": "CET-1",
+      "storages": [{ "id": "NetworkShare", "state": "ok" }]
     },
     {
       "id": 5,
@@ -85,21 +84,19 @@
       "enabled": false,
       "connected": true,
       "timezone": "CET-1",
-      "storages": [
-        { "id": "SDCard", "state": "ok" }
-      ]
+      "storages": [{ "id": "SDCard", "state": "ok" }]
     }
   ],
   "users": [
     {
       "id": 1,
       "username": "demouser1",
-      "password": "0b14d501a594442a01c6859541bcb3e8164d183d32937b851835442f69d5c94e"
+      "password": "da710cb800e31510a83a1711866d8db4fe899057b2b96cbb9c316c1bac34acb9"
     },
     {
       "id": 2,
       "username": "demouser2",
-      "password": "6cf615d5bcaac778352a8f1f3360d23f02f34ec182e259897fd6ce485d7870d4"
+      "password": "f17086f9ff991449b63524cd7ba8017985639e70a0ebe1f40b29809a04bccaf3"
     }
   ]
 }
