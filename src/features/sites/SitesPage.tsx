@@ -1,3 +1,5 @@
+import { LoadingSpinner } from "@/components/LoadingSpinner";
+
 export function SitesPage() {
-  return <p>Sites page - coming soon</p>
+  return <LoadingSpinner />
 }

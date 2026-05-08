@@ -1,0 +1,13 @@
+.wrapper {
+  background: var(--color-error-bg);
+  border: 1px solid var(--color-error-border);
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+}
+
+.wrapper p {
+  margin: 0;
+  font-size: 0.9375rem;
+}

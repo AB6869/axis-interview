@@ -3,6 +3,7 @@ import { Navigate, useNavigate } from 'react-router-dom'
 import { useAuth } from './AuthContext'
 import { ApiError } from '@/api'
 import styles from './LogingPage.module.css'
+import { ErrorMessage } from '@/components/ErrorMessage'
 
 export function LoginPage() {
   const { user, login } = useAuth()
@@ -40,11 +41,7 @@ export function LoginPage() {
         <h1 className={styles.title}>Sign in</h1>
 
         <form onSubmit={handleSubmit}>
-          {error && (
-            <div role="alert" className={styles.errror}>
-              {error}
-            </div>
-          )}
+          {error && <ErrorMessage error={error} />}
           <div className={styles.field}>
             <label htmlFor="username" className={styles.label}>
               Username
