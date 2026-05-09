@@ -15,11 +15,11 @@ export async function login(username: string, passowrd: string): Promise<AuthUse
   const hashed = await hashPassword(passowrd)
   const match = users.find((user) => user.username === username && user.password === hashed)
 
-  if(!match) {
+  if (!match) {
     throw new ApiError(401, 'Invalid username or password')
   }
 
-  const {password: _removed, ...authUser} = match
+  const { password: _removed, ...authUser } = match
 
   return authUser
 }
